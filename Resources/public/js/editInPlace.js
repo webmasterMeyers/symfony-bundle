@@ -6,7 +6,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-document.registerElement('x-trans', { prototype: Object.create(HTMLElement.prototype) });
+// [Deprecation] document.registerElement is deprecated and will be removed in M73, around March 2019. Please use window.customElements.define instead. See https://www.chromestatus.com/features/4642138092470272 for more details.
+// document.registerElement('x-trans', { prototype: Object.create(HTMLElement.prototype) });
 
 /**
  * TranslationBundleEditInPlace boot the ContentTools editor and handle saves.
