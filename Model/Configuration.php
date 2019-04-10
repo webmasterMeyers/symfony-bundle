@@ -97,6 +97,7 @@ final class Configuration
      */
     public function __construct(array $data)
     {
+        dump($data);
         $this->name = $data['name'];
         $this->locales = $data['locales'];
         $this->projectRoot = $data['project_root'];
@@ -140,6 +141,7 @@ final class Configuration
      */
     public function getOutputDir()
     {
+        dump($this->outputDir);
         return $this->outputDir;
     }
 
